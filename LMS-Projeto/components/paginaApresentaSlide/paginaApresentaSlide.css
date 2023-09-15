@@ -41,39 +41,10 @@ a{
   text-decoration: none;
   color: white;
 }
-ul li a{
-  position: relative;
-}
-ul li a::after{
-  content: '';
-  width: 100%;
-  height: 3px;
-  border-radius: 99px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: .3s ease;
-}
-ul li a:hover::after{
-  content: '';
-  width: 100%;
-  height: 3px;
-  border-radius: 99px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: .3s ease;
-}
+
 #btn-mobile{
   display: none;
 }
-
 
 .navbar-menu   {
   display: flex;
@@ -83,7 +54,6 @@ ul li a:hover::after{
   color: white;
   font-weight: 700;
 }
-
 
 
 .landing-page {
@@ -102,7 +72,7 @@ ul li a:hover::after{
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 130px;
@@ -110,7 +80,8 @@ ul li a:hover::after{
 
 .landing-page-image {
   object-fit: cover;
-  width: 1200px;
+  width: 1450px;
+  
 }
 
 .text {
@@ -121,7 +92,7 @@ ul li a:hover::after{
 }
 
 .text > h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--color-secondColor);
 }
 
@@ -130,7 +101,7 @@ ul li a:hover::after{
   color: var(--color-cinza);
 }
 
-.ferramentas {
+.ferramentas-paginaInserir {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
@@ -140,31 +111,31 @@ ul li a:hover::after{
   gap: 3rem;
 }
 
-.ferramentas > h1 {
+.ferramentas-paginaInserir > h1 {
   font-size: 3rem;
   color: var(--color-secondColor);
 }
 
-.ferramentas > p {
+.ferramentas-paginaInserir > p {
   width: 700px;
   font-size: 22px;
   color: var(--color-cinza);
   text-align: justify;
 }
 
-p > strong {
+p  > strong {
   color: var(--color-secondColor);
 }
 
 @media (max-width: 1280px) {
-  .landing-page-wrapper {
+  .landing-page-wrapper-paginaInserir {
     gap: 3rem;
   }
   .landing-page-image {
     width: 1000px;
   }
 
-  .landing-page-wrapper > .text {
+  .landing-page-wrapper-paginaInserir > .text {
     text-align: center;
   }
 }
@@ -240,23 +211,23 @@ p > strong {
     top: -7px;
   }
 
-  .landing-page-wrapper > .text > h1 {
+  .landing-page-wrapper-paginaInserir > .text > h1 {
     font-size: 3rem;
   }
 
-  .landing-page-wrapper > .text > p {
+  .landing-page-wrapper-paginaInserir > .text > p {
     font-size: 18px;
   }
 
   .landing-page-image {
-    width: 600px;
+    width: 650px;
   }
 
-  .landing-page > .text {
+  .landing-page-wrapper-paginaInserir > .text {
     width: auto;
   }
 
-  .ferramentas > p {
+  .ferramentas-paginaInserir > p {
     font-size: 18px;
     width: auto;
   }
